@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		blabla
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Test Form</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form>
+		<h1>Delivery Form</h1>
+		<form action="xxx.php">
+			<fieldset>
+				<h2>Personal Info</h2>
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="fname" placeholder="John" pattern="[A-Za-z]" autofocus required><br>
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lname" placeholder="Wick" pattern="[A-Za-z]" required><br>
+				<label for="birth">Date of Birth:</label>
+				<input type="date" name="birth" id="birth" max="2006-10-10" required><br>
+				<label for="adress">Adress:</label>
+				<input type="text" name="adress" id="adress" placeholder="Wallstreet 101" required><br>
+				<label for="phone">Phone Number:</label>
+				<input type="tel" name="phone" id="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+				<label for="mail">E-mail:</label>
+				<input type="email" name="mail" id="mail" value="@" required><br>
+			</fieldset>
+			<fieldset>
+				<h2>Product</h2>
+				<div class="item" id="itemA" onclick="selectProduct('A', this)">
+					<p>Item A</p>
+				</div>
+				<div class="item" id="itemB" onclick="selectProduct('B', this)">
+					<p>Item B</p>
+				</div>
+				<div class="item" id="itemC" onclick="selectProduct('C', this)">
+					<p>Item C</p>
+				</div><br>
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" min="1" value="1">
+			</fieldset>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
 		</form>
 	</body>
 </html>
