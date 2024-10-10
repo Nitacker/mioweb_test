@@ -1,18 +1,24 @@
-.item {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+.product {
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
     display: inline-block;
-    border: 2px solid rgb(0, 0, 0);
-}
-#itemA {
-    background-color: red; /* Pozadí pro Item 1 */
 }
 
-#itemB {
-    background-color: green; /* Pozadí pro Item 2 */
+.product.selected {
+    border-color: blue;
+    background-color: #f0f8ff;
 }
 
-#itemC {
-    background-color: blue; /* Pozadí pro Item 3 */
+#productA {
+    background-color: red;
+}
+
+#productB {
+    background-color: green;
+}
+
+#productC {
+    background-color: blue;
 }
