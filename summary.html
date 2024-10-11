@@ -12,5 +12,13 @@
     <fieldset>
         <div id="summary"></div>
     </fieldset>
+    <fieldset>
+        <h2>Currency Selection</h2>
+    <label for="currencySelect">Choose Currency:</label>
+    <select id="currencySelect" onchange="updateConvertedPrice()"></select>
+    <div>
+        Converted Price: <span id="convertedPrice">0 Kč</span>
+    </div>
+    </fieldset>
 </body>
 </html>
