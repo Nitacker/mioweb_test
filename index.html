@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mioweb Test</title>
 		<link rel="stylesheet" href="style.css">
-		<script src="script.js"></script>
+        <script src="script.js"></script>
 	</head>
 	<body>
 		<h1>Delivery Form</h1>
@@ -28,13 +28,13 @@
 			<fieldset>
 				<h2>Items</h2>
 				<label for="itemA">A (300 Kč)</label>
-				<input type="radio" name="item" id="itemA" value="300" data-price="300" onchange="updatePrice()"><br>
+				<input type="radio" name="item" id="itemA" value="300" data-price="300" onclick="updatePrice()"><br>
 				<label for="itemB">B (400 Kč)</label>
-				<input type="radio" name="item" id="itemB" value="400" data-price="400" onchange="updatePrice()"><br>
+				<input type="radio" name="item" id="itemB" value="400" data-price="400" onclick="updatePrice()"><br>
 				<label for="itemC">C (500 Kč)</label>
-				<input type="radio" name="item" id="itemC" value="500" data-price="500" onchange="updatePrice()"><br>
+				<input type="radio" name="item" id="itemC" value="500" data-price="500" onclick="updatePrice()"><br>
 				<label for="quantity">Quantity:</label>
-				<input type="number" id="quantity" name="quantity" min="1" value="1" onchange="updatePrice()">
+				<input type="number" id="quantity" name="quantity" min="1" value="1" oninput="updatePrice()">
 				<p>Total price: <span id="totalPrice">0</span> Kč</p>					
         </fieldset>
 			<input type="submit" value="Submit">
