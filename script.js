@@ -19,3 +19,4 @@ function updatePrice() {
         document.getElementById('totalPrice').textContent = "0";
     }
 }
+
